@@ -3,14 +3,14 @@
 DiliLazyKV is a novel two-stage KV cache compression library for KV Cache compression.
 
 
-## 1. 💻 Install Packages
+##  💻 Install Packages
 Please see requirements.txt.
 
-## 2 🚗 Two-stage method
+##  🚗 Two-stage method
 
 DiliLazyKV employs a two-stage method to achieve effective KV cache compression:
 
-### 2.1 🏃‍♀️‍➡️ Diligent Head and Lazy Head Identification
+###  🏃‍♀️‍➡️ Diligent Head and Lazy Head Identification
 
 In the first stage, we identify the Inference score of individual attention heads for different model capabilities using a Needle-in-a-Haystack test. This test helps us distinguish between:
 
@@ -49,7 +49,7 @@ and other metrics based on the user-defined Top-K attention threshold and the po
 python structure_head_InfScore.py 
 ```
 
-### 🏃‍♂️ 2.2 Collaborative Layer-Head KV Cache Budget Allocation
+### 🏃‍♂️ Collaborative Layer-Head KV Cache Budget Allocation
 
 During the prefill stage, we allocate the KV cache budget for
 each head based on the inter-layer aggregation and intra-layer distribution of InfScore variance across heads, , taking into account:
@@ -85,7 +85,7 @@ for((i=0;i<${#head_choices[@]};i++));do
     done
 done
 ```
-## 🥳 3. Key Features and Benefits
+## 🥳 Key Features and Benefits
 - Two-Stage Compression: Separates head importance identification from budget allocation for a more principled approach.
 - Diligent and Lazy Head Distinction: Leverages the varying roles of attention heads for targeted compression.
 - Collaborative Layer-Head Allocation: Considers both layer-level and head-level importance for fine-grained budget management.
