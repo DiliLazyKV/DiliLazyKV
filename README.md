@@ -2,6 +2,7 @@
 
 DiliLazyKV is a novel two-stage KV cache compression library for KV Cache compression.
 
+![Main Idea of DiliLazyKV method](content.png)
 
 ##  💻 Install Packages
 Please see requirements.txt.
