@@ -51,7 +51,7 @@ python structure_head_InfScore.py
 ### 🏃‍♂️ Collaborative Layer-Head KV Cache Budget Allocation
 
 During the prefill stage, we allocate the KV cache budget for
-each head based on the inter-layer aggregation and intra-layer distribution of InfScore variance across heads, , taking into account:
+each head based on the inter-layer aggregation and intra-layer distribution of InfScore variance across heads, taking into account:
 
 - Inter-layer Aggregation of InfScore Variance: We analyze how the variance of InfScores aggregates across different layers to understand the overall importance of head patterns within the network.
 - Intra-layer Distribution of InfScore Variance: Within each layer, we examine the distribution of InfScore variance across different heads to identify the relative importance of individual heads.
