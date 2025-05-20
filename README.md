@@ -93,4 +93,4 @@ done
 - Beneficial for Real-World Deployment: Enables efficient deployment of large language models with reduced memory footprint and bandwidth requirements.
 
 ## 👏 Acknowledgement
-Thanks [HeadKV-R2](https://github.com/FYYFU/HeadKV) for providing open-source code and data, which has been invaluable to the development of DiliLazyKV
+Thanks [HeadKV-R2](https://github.com/FYYFU/HeadKV) for providing open-source code and data, which has been invaluable to the development of DiliLazyKV.
