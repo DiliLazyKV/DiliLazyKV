@@ -9,8 +9,6 @@ Please see requirements.txt.
 
 ##  🚗 Two-stage method
 
-DiliLazyKV employs a two-stage method to achieve effective KV cache compression:
-
 ###  🏃‍♀️‍➡️ Diligent Head and Lazy Head Identification
 
 In the first stage, we identify the Inference score of individual attention heads for different model capabilities using a Needle-in-a-Haystack test. This test helps us distinguish between:
